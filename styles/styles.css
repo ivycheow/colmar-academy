@@ -31,6 +31,10 @@ body {
   text-decoration: none;
 }
 
+.navbar-items > li > a:visited {
+  color:#3f3f3f;
+}
+
 .mobile-navbar {
   display: none;
 }
@@ -120,6 +124,7 @@ body {
   display: flex;
   border-bottom: #d3d3d3 solid;
   background: #d3d3d3;
+  align-items: center;
 }
 
 .information-container-img-mobile {
@@ -151,8 +156,12 @@ body {
   color: #7f7f7f;
 }
 
-.information-anchor:visited {
+.information-anchor {
   text-decoration: none;
+}
+
+.information-anchor:visited{
+  color: blue;
 }
 
 /* Start Learning container */
