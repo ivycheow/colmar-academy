@@ -1,0 +1,455 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Navigation bar */
+.navbar-container {
+  height: 64px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  margin-left: 24px;
+}
+
+.navbar-items {
+  max-width: 100%;
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+  margin-left: auto;
+  margin-right: 24px;
+}
+
+.navbar-items > li {
+  list-style-type: none;
+}
+
+.navbar-items > li > a {
+  text-decoration: none;
+}
+
+.mobile-navbar {
+  display: none;
+}
+
+/* Header */
+.header-container {
+  background-color: #d3d3d3;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+.header-container-main {
+  padding: 32px 24px;
+}
+
+.header-subcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-image {
+  width: 100%;
+}
+
+.header-heading {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.header-button {
+  background-color: #3f3f3f;
+  width: 80%;
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+  border: none;
+  padding: 8px 0px;
+}
+
+/* Information main container */
+.information-container,
+.thesis-container-grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+.information-container-main {
+  padding: 32px 24px;
+}
+
+.information-main-img {
+  width: 100%;
+}
+
+.information-main-header {
+  margin-bottom: 24px;
+  margin-top: 32px;
+}
+
+.information-main-p {
+  width: 100%;
+  font-size: 1.2rem;
+  color: #7f7f7f;
+  margin: 0;
+}
+
+.information-main-p-author {
+  width: 60%;
+  margin: 0;
+}
+
+/* Information right container */
+.information-container-sub {
+  display: flex;
+  flex-direction: column;
+  border-left: #d3d3d3 solid;
+  padding: 32px 0px;
+}
+
+.information-container-sub-small {
+  display: flex;
+  border-bottom: #d3d3d3 solid;
+}
+
+.information-container-sub-small-3 {
+  display: flex;
+  border-bottom: #d3d3d3 solid;
+  background: #d3d3d3;
+}
+
+.information-container-img-mobile {
+  display: none;
+}
+
+.information-container-img-desktop {
+  width: 35%;
+  margin: 16px;
+}
+
+.information-container-img-1-desktop {
+  width: 35%;
+  margin: 0px 16px 16px 16px;
+}
+
+.information-container-sub-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.information-container-sub-right-header {
+  margin: 0;
+}
+
+.information-container-sub-right-p {
+  margin: 8px 0px;
+  color: #7f7f7f;
+}
+
+.information-anchor:visited {
+  text-decoration: none;
+}
+
+/* Start Learning container */
+.course-container {
+  background-color: #d3d3d3;
+  padding: 0px 72px 32px 72px;
+}
+
+.course-container-header,
+.thesis-header {
+  padding: 32px 0px;
+  margin: 0;
+  text-align: center;
+}
+
+.course-row-1-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 32px;
+}
+
+.course-row-1-card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.c1-img {
+  width: 100%;
+}
+
+.c1-info {
+  padding: 16px 16px 24px 16px;
+}
+
+.c1-info > h2 {
+  margin: 0;
+}
+
+.c1-info > p {
+  margin: 8px 0px;
+  color: #7f7f7f;
+}
+
+.course-mobile {
+  display: none;
+}
+
+/* Thesis Exhibit Section */
+.thesis-container-l {
+  padding: 0px 24px 0px 24px;
+}
+
+.thesis-vid {
+  width: 100%;
+}
+
+.thesis-sub-header {
+  margin: 24px 0px 8px 0px;
+  padding: 0px;
+  text-align: left;
+}
+
+.thesis-p {
+  color: #7f7f7f;
+  margin: 0px 0px 32px 0px;
+}
+
+.thesis-container-1 {
+  display: flex;
+  background-color: #d3d3d3;
+}
+
+.thesis-container-2 {
+  display: flex;
+}
+
+.thesis-container-img-1 {
+  width: 35%;
+  margin: 16px;
+}
+
+.thesis-container-img-2 {
+  width: 35%;
+  margin: 16px;
+}
+
+/* Footer section */
+.footer-container {
+  display: flex;
+  padding-left: 24px;
+  padding-top: 16px;
+  border-top: #d3d3d3 solid 0.5px;
+  color: #7f7f7f;
+}
+
+.footer-items {
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+  margin-left: auto;
+  margin-right: 24px;
+}
+
+.footer-items > li {
+  list-style-type: none;
+}
+
+.footer-items > li > a {
+  text-decoration: none;
+}
+
+/* Mobile Responsiveness */
+@media only screen and (max-width: 580px) {
+  /* Navigation bar */
+  .mobile-navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .mobile-navbar a {
+    margin: 0 10px;
+  }
+
+  .navbar-container > .navbar-logo,
+  .navbar-container > p,
+  .navbar-container > .navbar-items {
+    display: none;
+  }
+
+  /* Header Section*/
+  .header-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-container-main {
+    padding: 0;
+  }
+
+  .header-subcontainer {
+    padding: 32px 16px;
+  }
+
+  .header-subcontainer > h3 {
+    margin: 32px 0px 24px 0px;
+  }
+
+  .header-button {
+    width: 100%;
+    background-color: #7f7f7f;
+    padding: 8px 0px;
+    margin: 0;
+  }
+
+  .header-button-p > a:visited {
+    color: white;
+    text-decoration: none;
+  }
+
+  /* Information Main Section */
+  .information-container-main {
+    display: none;
+  }
+
+  .information-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .information-container-sub {
+    border: none;
+    padding-bottom: 32px;
+    padding-top: 0px;
+    width: 100%;
+    border-bottom: #d3d3d3 solid 0.5px;
+  }
+
+  .information-container-sub-small {
+    display: flex;
+    flex-direction: column;
+    border: none;
+  }
+
+  .information-container-sub-small-3 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: none;
+  }
+
+  .information-container-img-1-desktop,
+  .information-container-img-desktop {
+    display: none;
+  }
+
+  .information-container-img-mobile {
+    display: flex;
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  .information-container-sub-right {
+    padding: 0px 0px 64px 32px;
+  }
+
+  .information-container-sub-right-3 {
+    padding-left: 32px;
+  }
+
+  .information-anchor {
+    text-decoration: none;
+  }
+
+  .information-anchor:visited {
+    color: blue;
+  }
+
+  /* Start Learning section */
+  .course-container {
+    background-color: white;
+    padding: 0px 16px 32px 16px;
+    border-bottom: #d3d3d3 solid 0.5px;
+  }
+
+  .course-container-header {
+    padding-bottom: 16px;
+  }
+
+  .course-row-1-container {
+    display: none;
+  }
+
+  .course-mobile {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 8px;
+  }
+
+  .course-mobile-c1 {
+    background-color: #d3d3d3;
+    padding: 16px 0px 24px 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .course-mobile-c1 > h3 {
+    margin: 0;
+    font-weight: 50%;
+  }
+
+  .course-mobile > a {
+    text-decoration: none;
+    color: black;
+  }
+
+  /* Thesis Exhibit Section */
+
+  .thesis-header {
+    padding-bottom: 16px;
+  }
+
+  .thesis-container-r,
+  .thesis-sub-header,
+  .thesis-p {
+    display: none;
+  }
+
+  .thesis-container-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .thesis-container-l {
+    padding: 0px;
+  }
+
+  .thesis-vid {
+    width: 100%;
+    padding-bottom: 24px;
+  }
+
+  /* Footer Section */
+  .footer-container {
+    border: none;
+    padding: 0px;
+  }
+
+  .footer-container > p {
+    padding-left: 24px;
+  }
+
+  .footer-items {
+    display: none;
+  }
+}
